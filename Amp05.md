@@ -1,6 +1,6 @@
 ### Task 4 Dynamic Content Based on Gender
 
-HHow can you display different content based on the subscriber's gender?
+How can you display different content based on the subscriber's gender?
 
 #### Soltuion
 ```ampscript
