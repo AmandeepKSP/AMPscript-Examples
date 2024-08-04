@@ -11,6 +11,6 @@ SET @FirstName = [FirstName]
 <p>Hello %%=v(@FirstName)=%%,</p>
 <p>Welcome to our newsletter!</p>
 ```
-## Resources
+### Resources
 
 Download the sample dataset from the `AMPScript.csv` file to start practicing.
