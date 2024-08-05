@@ -1,6 +1,6 @@
-### Task 4 Birthday Email
+### Task 5 Subscription Anniversary Email
 
-How can you send a special birthday message to subscribers on their birthday?
+How can you send a special message on the anniversary of the subscriber's subscription date?
 
 #### Soltuion
 ```ampscript
@@ -22,6 +22,7 @@ If @SubscriptionMonth == @TodayMonth AND @SubscriptionDay == @TodayDay THEN
 <p>Hello %%=v(@FirstName)=%%,</p>
 <p>Welcome to our newsletter!</p>
 %%[ENDIF]%%
+
 ```
 
 ### Resources
