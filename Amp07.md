@@ -29,4 +29,4 @@ IF @City == "Philadelphia" THEN
 ```
 ### Resource
 
-Download the `AMPscript.csv` file from the `Amp-csv` folder to start practicing.
+Download the AMPscript.csv file from the Amp-csv folder to start practicing.
