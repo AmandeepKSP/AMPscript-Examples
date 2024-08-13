@@ -5,23 +5,29 @@ How can you send a special birthday message to subscribers on their birthday?
 #### Soltuion
 ```ampscript
 %%[
-Var @FirstName, @SubscriptionDate, @TodayMonth, @SubscriptionMonth, @SubscriptionDay, @TodayMonth, @TodayDay
-Set @FirstName = [FirstName]
-Set @SubscriptionDate =[SubscriptionDate]
-Set @TodayDate = Now()
-Set @SubscriptionMonth = DatePart(@SubscriptionDate, "m")
-Set @SubscriptionDay = DatePart(@SubscriptionDate, "d")
-Set @TodayMonth = DatePart(@TodayDate, "m")
-Set @TodayDay = DatePart(@TodayDate, "d")
+VAR @FirstName, @BirthDate, @Today, @BirthMonth, @BirthDay, @TodayMonth, @TodayDay
+SET @FirstName = [FirstName]
+SET @BirthDate = [Birthdate]
+SET @Today = Now()
 
-If @SubscriptionMonth == @TodayMonth AND @SubscriptionDay == @TodayDay THEN
+SET @TodayDate = DateParse(@Today)
+SET @BirthMonth = DatePart(@BirthDate, "m")
+SET @BirthDay = DatePart(@BirthDate, "d")
+SET @TodayMonth = DatePart(@Today, "m")
+SET @TodayDay = DatePart(@Today, "d")
+a
+IF @BirthMonth == @TodayMonth AND @BirthDay == @TodayDay THEN
 ]%%
-<p>Happy Subscription Anniversary, %%=v(@FirstName)=%%!</p>
-<p>Thank you for being with us for another year!</p>
-%%[ELSE]%%
+<p>Happy Birthday %%=v(@FirstName)=%%! Enjoy Your Day</p>
+<p>Welcome to our newsletter!</p>
+%%[
+ELSE
+]%%
 <p>Hello %%=v(@FirstName)=%%,</p>
 <p>Welcome to our newsletter!</p>
-%%[ENDIF]%%
+%%[
+ENDIF
+]%%
 ```
 
 ### Resources
